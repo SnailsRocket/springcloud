@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthCodeController {
 
-    @RequestMapping("healthCode/create")
-    public ResponseResult<HealthResponse> create(@RequestBody String body) {
+//    @PostMapping("/healthCode/create")
+    @RequestMapping("/healthCode/create")
+//    public ResponseResult<HealthResponse> create(@RequestBody String body) {
+    public ResponseResult<HealthResponse> create() {
         HealthResponse response = new HealthResponse();
         //TODO
         response.setUserId(1);
